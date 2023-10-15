@@ -8,9 +8,9 @@ let fib n =
         | n -> loop acc2 (acc1 + acc2) (n - 1I)
     loop 0I 1I n
     
-printfn $"%O{fib 10I}" 
-printfn $"%O{fib 1I}" 
-printfn $"%O{fib 200I}" 
+printfn $"fibonacci sequence of 10:\t%O{fib 10I}" 
+printfn $"fibonacci sequence of 1:\t%O{fib 1I}" 
+printfn $"fibonacci sequence of 200:\t%O{fib 200I}" 
 
 
 [<Fact>]
